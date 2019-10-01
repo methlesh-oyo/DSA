@@ -40,6 +40,7 @@ int main()
         cout<<a[i]<<" ";
     }
     build_max_heap(a, n);
+    // heap-sort
     for(int i=n; i>1; i--)
     {
         swap(a[i-1], a[0]);
