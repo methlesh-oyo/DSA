@@ -6,21 +6,15 @@ using vi=vector<int>;
 void max_heapify(vi& a, int id, int n)
 {
     int l=2*id, r=2*id+1, mid=id, max_elem=a[id-1];
-    if(l<=n)
+    if(l<=n and max_elem<a[l-1])
     {
-        if(max_elem<a[l-1])
-        {
-            max_elem=a[l-1];
-            mid=l;
-        }
+        max_elem=a[l-1];
+        mid=l;
     }
-    if(r<=n)
+    if(r<=n and max_elem<a[r-1])
     {
-        if(max_elem<a[r-1])
-        {
-            max_elem=a[r-1];
-            mid=r;
-        }
+        max_elem=a[r-1];
+        mid=r;
     }
     if(mid!=id)
     {
