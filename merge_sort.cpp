@@ -34,7 +34,7 @@ void merge_sort(int l, int r, int arr[]){
 			j++;
 			k++;
 		}
-    k=0;
+		k=0;
 		for(int i=l; i<=r; i++){
 			arr[i]=b[k++];
 		}
@@ -46,16 +46,16 @@ int main(){
 	for(int i=0; i<n; i++){
 		cin>>arr[i];
 	}
-  cout<<"Array before sorting:\n";
-	for(int i=0; i<n; i++){
-		cout<<arr[i]<<" ";
-  }
-  cout<<"\n";
-	merge_sort(0, n-1, arr);
-  cout<<"Array after sorting:\n";
+	cout<<"Array before sorting:\n";
 	for(int i=0; i<n; i++){
 		cout<<arr[i]<<" ";
 	}
-  cout<<"\n";
+	cout<<"\n";
+	merge_sort(0, n-1, arr);
+	cout<<"Array after sorting:\n";
+	for(int i=0; i<n; i++){
+		cout<<arr[i]<<" ";
+	}
+	cout<<"\n";
 	return 0;
 }
