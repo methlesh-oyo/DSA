@@ -153,7 +153,7 @@ vector<vi> SM(vector<vi> A, vector<vi> B){
 	C21 = add(P3, P4, 1);
 	C22 = add(add(P5, P1, 1), add(P3, P7, 1), 0);
     
-    temp.assign(n, 0);
+    	temp.assign(n, 0);
 	for(int i=0; i<n; i++){
 		C.push_back(temp);
 	}
