@@ -109,7 +109,7 @@ vector<vi> SMMR(vector<vi> A, vector<vi> B){
 	C21 = add(SMMR(A21, B11), SMMR(A22, B21));
 	C22 = add(SMMR(A21, B12), SMMR(A22, B22));
     
-    temp.assign(n, 0);
+   	temp.assign(n, 0);
 	for(int i=0; i<n; i++){
 		C.push_back(temp);
 	}
